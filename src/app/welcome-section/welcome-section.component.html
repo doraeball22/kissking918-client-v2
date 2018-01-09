@@ -1,0 +1,32 @@
+<!-- baner -->
+<div id="home">
+  <div class="banner-wrap  js-bg-img">
+    <img src="assets/img/red/banner-1.jpg" alt="">
+    <div class="content margin-lg-100t margin-sm-50t">
+      <!-- <h1 class="title animatedBlock ">WE CAN DANCE FOREVER</h1> -->
+      <!-- <div class="text animatedBlock">
+        <p>Rem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod &nbsp;idunt ut labore et dolore magna aliqua.
+          Ut enim ad minim inim veni</p>
+      </div> -->
+      <div class="container">
+        <div class="col-md-12">
+          <div class="box">
+            <owl-carousel [options]="{items: 1, dots: true, navigation: true}" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+              <div class="item" *ngFor="let image of images;let i = index">
+                <img [src]="'assets/img/promotions/'+image" alt="" class="rounded mx-auto d-block">
+              </div>
+            </owl-carousel>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">   
+          <div class="jackpotwrap" style="background: url(assets/img/jackpot-box.png) top center no-repeat;">
+            <div id="jp_0" class="jackpotamount">{{  ticks | currency }}</div>
+         </div>     
+    </div> 
+    
+
+  </div>
+</div>

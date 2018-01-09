@@ -1,0 +1,21 @@
+<div id="game-list" class="padding-lg-130t padding-xs-0t">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div class="block-header margin-lg-10t margin-lg-25b margin-sm-5t margin-xs-5t ">
+                   <h2 class="block-title">{{ title_th }}</h2>
+                  <div class="block-text">
+                      <p>{{ description }}</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-4" *ngFor="let game of GAMES">
+          <div class="box">
+            <img src="assets/img/games/{{ game.image }}" alt="" >
+          </div>
+      </div>
+  </div>
+  </div>
+</div>

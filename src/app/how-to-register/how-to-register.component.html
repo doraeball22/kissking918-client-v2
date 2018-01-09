@@ -1,0 +1,82 @@
+<div id="register" class="padding-lg-130t padding-xs-0t">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div class="block-header margin-lg-10t margin-lg-25b margin-sm-5t margin-xs-5t ">
+                   <h2 class="block-title">{{ title_th }}</h2>
+                  <div class="block-text">
+                      <p>{{ description }}</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <div class="row">
+      <div class="col-sm-4 col-lg-4 col-md-4 col-xs-12">
+        <div class="services-wrap animatedBlock">
+          <div class="service-block service-entry">
+            <div class="block-icon">
+                <i class="icofont icofont-brand-line-messenger" aria-hidden="true"  style="font-size: 1.875em"></i>
+            </div>
+            <h4 class="service-title">สมัครสมาชิก</h4>
+            <div class="service-text">ติดต่อรับรหัสผ่านเข้าเกมผ่านทาง LINE ID: {{ line.id }}</div>
+            <div style="margin-top: 10px">
+              <button type="button" class="a-btn" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+                aria-controls="collapseExample">
+                รับรหัสผ่าน
+              </button>
+            </div>
+            <div id="collapseExample" [ngbCollapse]="isCollapsed">
+                
+              <ol class="block-text">
+                <div class="line-it-button" data-lang="th" data-type="friend" data-lineid="@king918" style="display: none;"></div>
+                <li *ngFor="let register of register_in_line">
+                    {{ register.how_to }}
+                </li>
+              </ol>
+            </div>
+          </div>
+  
+
+        </div>
+      </div>
+      <div class="col-sm-4 col-lg-4 col-md-4 col-xs-12">
+        <div class="services-wrap animatedBlock">
+          <div class="service-block service-entry">
+            <div class="block-icon">
+              <i class="miami-icon fa fa-money" aria-hidden="true" style="font-size: 1.875em"></i>
+            </div>
+            <h4 class="service-title">โอนเงิน</h4>
+            <div class="service-text">แจ้งฝากธนาคาร 4 ชั้นนำ หรือทรูมันนี่วอลเล็ท (truemoney wallet)</div>
+            <div style="margin-top: 10px">
+              <a href="{{line.link}}" class="a-btn" target="_bank" >เติมเงิน</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-lg-4 col-md-4 col-xs-12">
+        <div class="services-wrap animatedBlock">
+          <div class="service-block service-entry">
+            <div class="block-icon">
+              <i class="miami-icon fa fa-gamepad" aria-hidden="true" style="font-size: 1.875em"></i>
+            </div>
+            <h4 class="service-title">เล่นเกมได้เลย!!</h4>
+            <div class="service-text">ใส่ username และ password ที่ได้รับมาจากการสมัครสมาชิก</div>
+            <div style="margin-top: 10px">
+              <a href="https://m.918kiss.com/" class="a-btn" target="_bank" >เล่นเกม</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+

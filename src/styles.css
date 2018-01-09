@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+.block-title {
+  display: flex;
+  align-items: flex-start;
+}
+
+.block-text {
+  display: flex;
+  align-items: flex-start;
+}
+
+.block-title {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(top, #efd100 0, #e2a233 38%, #f0c328 60%, #fff1a3 86%, #ffe13e 100%);
+  background-size: 1em 1em;
+  color: #f8b700;
+  display: inline-block;
+  line-height: 1em;
+  position: relative;
+  z-index: auto
+}
+
+.block-title::after {
+  background: 0 0;
+  content: attr(data-text);
+  display: inline-block;
+  left: 0;
+  position: absolute;
+  text-shadow: 0 1px 5px #000;
+  top: 0;
+  z-index: -1
+}
+
+.block-title:hover {
+  background-image: -webkit-linear-gradient(top, #fff 0, #fff 100%);
+  color: #fff
+}
+
+
+/* BASIC */
+
+body {
+  background: linear-gradient(135deg, #121721 0%, #000000 100%) fixed;
+  /* color: #FFF; */
+  /* font: 300 16px/1.5 "Open Sans", sans-serif; */
+}
+
+
