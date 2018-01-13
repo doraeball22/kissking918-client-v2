@@ -1,18 +1,18 @@
 <!-- baner -->
-<div id="home">
+<!-- <div id="home">
   <div class="banner-wrap  js-bg-img">
-    <img src="assets/img/red/banner-1.jpg" alt="">
+    <img src="assets/img/background/bg4.jpg" alt="">
     <div class="content margin-lg-100t margin-sm-50t">
-      <!-- <h1 class="title animatedBlock ">WE CAN DANCE FOREVER</h1> -->
-      <!-- <div class="text animatedBlock">
+      <h1 class="title animatedBlock " style="color:#9C0014; font-size: 3em">สมัคร และดาวน์โหลด 918Kiss วันนี้</h1>
+      <div class="text animatedBlock">
         <p>Rem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod &nbsp;idunt ut labore et dolore magna aliqua.
           Ut enim ad minim inim veni</p>
-      </div> -->
+      </div>
       <div class="container">
         <div class="col-md-12">
           <div class="box">
-            <owl-carousel [options]="{items: 1, dots: true, navigation: true}" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
-              <div class="item" *ngFor="let image of images;let i = index">
+            <owl-carousel [options]="{items: 1, dots: false, navigation: false}" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+              <div class="item" *ngFor="let image of images;let i = index" >
                 <img [src]="'assets/img/promotions/'+image" alt="" class="rounded mx-auto d-block">
               </div>
             </owl-carousel>
@@ -20,13 +20,70 @@
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="jackpotwrap" >
+        <div id="jp_0" class="jackpotamount">{{ ticks | currency }}</div>
+      </div>
+    </div>
+  </div>
+</div> -->
 
-    <div class="row">   
-          <div class="jackpotwrap" style="background: url(assets/img/jackpot-box.png) top center no-repeat;">
-            <div id="jp_0" class="jackpotamount">{{  ticks | currency }}</div>
-         </div>     
-    </div> 
-    
-
+<!-- baner -->
+<div id="home-page-1" class="js-bg-img padding-lg-35t">
+  <img src="assets/img/background/bg4.jpg" alt="">
+  <div id="home">
+      <div class="banner-slider-wrap padding-sm-30b ">
+          <div class="swiper-container  " data-mode="horizontal" data-autoplay="0" data-loop="true" data-speed="600" data-slides-per-view="responsive" data-add-slides="1" data-xs-slides="1" data-sm-slides="1" data-md-slides="1" data-lg-slides="1">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide " *ngFor="let image of images;let i = index">
+                      <div class="slider-content">
+                          <div class="container">
+                              <div class="row">
+                                  <div class="col-xs-12 col-md-7 ">
+                                      <div class="left-block">
+                                          <!-- <div class="date">14 OCT</div>
+                                          <h2 class="title">On The Wave</h2> -->
+                                          <div>
+                                            <img [src]="'assets/img/promotions/'+image" alt="">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-xs-12 col-md-5">
+                                      <div class="right-block">
+                                          <div class="description">
+                                              <!-- <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\r\rDuis
+                                                  aute irure dolor in reprehenderit in voluptate velit ad minim veniam, quis nostrud exercitation ullamcoesse cillum</p> -->
+                                                  <h1 class="title animatedBlock " style="color: red;text-shadow: 2px 2px black;">
+                                                    เกมคาสิโน ยิงปลา บาคารา แข่งม้า สล็อต สมัครและดาวน์โหลดเกม 918Kiss กับทาง 918KISSKING วันนี้รับโปรโมชันมากมาย
+                                                  </h1>
+                                          </div>
+                                          <!-- <div class="hashtags">
+                                              <a target="_blank" href="https://twitter.com/hashtag/ModernDance%20">#ModernDance</a>
+                                              <a target="_blank" href="https://twitter.com/hashtag/inWave%20">#inWave</a>
+                                              <a target="_blank" href="https://twitter.com/hashtag/Miami">#Miami</a>
+                                          </div> -->
+                                          <a href="https://m.918kiss.com/" class="event_btn a-btn anchor-scroll">Download </a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+            
+                  
+              </div>
+              <div class="pagination "></div>
+              <div class="swiper-arrow swiper-arrow-left"></div>
+              <div class="swiper-arrow swiper-arrow-right"></div>
+          </div>
+      </div>
   </div>
 </div>
+
+<div class="row">
+  <div class="jackpotwrap" >
+    <div id="jp_0" class="jackpotamount">{{ ticks | currency }}</div>
+  </div>
+</div>
+
+

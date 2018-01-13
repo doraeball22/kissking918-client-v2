@@ -25,9 +25,9 @@
                 รับรหัสผ่าน
               </button>
             </div>
-            <div id="collapseExample" [ngbCollapse]="isCollapsed">
+            <div id="collapseExample" class="services-wrap animatedBlock" [ngbCollapse]="isCollapsed" style="text-align:left">
                 
-              <ol class="block-text">
+              <ol>
                 <div class="line-it-button" data-lang="th" data-type="friend" data-lineid="@king918" style="display: none;"></div>
                 <li *ngFor="let register of register_in_line">
                     {{ register.how_to }}
@@ -68,6 +68,37 @@
           </div>
         </div>
       </div>
+
+      <!-- <div class="col-xs-12">
+        <div class="services-wrap animatedBlock">
+          <div class="service-block service-entry">
+            <div class="block-icon">
+              <i class="miami-icon fa fa-money" aria-hidden="true" style="font-size: 1.875em"></i>
+            </div>
+            <h4 class="service-title">โอนเงิน</h4>
+            <div class="service-text">
+              <div>
+                
+                <ol>
+                  <div class="line-it-button" data-lang="th" data-type="friend" data-lineid="@king918" style="display: none;"></div>
+                  <li *ngFor="let register of register_in_line">
+                      
+       
+                        {{ register.how_to }}
+
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      
+
+
+
+
     </div>
   </div>
 </div>

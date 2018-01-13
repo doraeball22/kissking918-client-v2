@@ -1,0 +1,8 @@
+.main-page {
+  background-color: #05060b;
+  background-image: url('../assets/img/background/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center 555px;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+}

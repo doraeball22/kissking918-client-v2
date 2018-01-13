@@ -2,30 +2,34 @@
   width: 450px;
   max-width: 100%;
   max-height: 450px;
+  /* border: 5px solid transparent;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transparent)); */
 }
 
 .jackpotwrap {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    z-index: 500;
-    text-align: center;
-    height: 60px;
+  /* background: url('../../assets/img/jackpot-box.png') top center no-repeat; */
+  background-image: url('../../assets/img/jackpot-box.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size:contain;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 500;
+  text-align: center;
+  /* height: 60px; */
+
 }
 
 .jackpotamount {
-    color: #fead0a;
-    background-image: -webkit-linear-gradient(top, #efd100 0, #e2a233 38%, #f0c328 60%, #fff1a3 86%, #ffe13e 100%);
-        background-clip: border-box;
-        background-image: -webkit-linear-gradient(top, #efd100 0, #e2a233 38%, #f0c328 60%, #fff1a3 86%, #ffe13e 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: 16px;
-    margin-left: 175px;
+  color: #fead0a;
+  background-image: -webkit-linear-gradient(top, #efd100 0, #e2a233 38%, #f0c328 60%, #fff1a3 86%, #ffe13e 100%);
+  background-clip: border-box;
+  background-image: -webkit-linear-gradient(top, #efd100 0, #e2a233 38%, #f0c328 60%, #fff1a3 86%, #ffe13e 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
+  font-size: 1.8em;
+  margin-top: 1rem;
+  margin-left: 110px;
 }
-
-
-
-

@@ -298,9 +298,9 @@ body .fox-postmeta>div  {
 body {
     background-color: #031322;
 }
-body {
+/* body {
 	background-color: #031322 !important;
-}
+} */
 @media (max-width: 767px) {
   .header {
     background-color: #031322;

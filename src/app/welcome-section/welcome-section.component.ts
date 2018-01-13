@@ -18,11 +18,11 @@ export class WelcomeSectionComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    setInterval(() => { this.timer(); }, 400);
+    setInterval(() => { this.timer(); }, 100);
   }
 
   private timer() {
-    this.ticks = this.ticks + 1.77;
+    this.ticks = this.ticks + 1.22;
   }
 
 }

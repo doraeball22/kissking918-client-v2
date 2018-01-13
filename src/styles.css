@@ -1,11 +1,25 @@
 .block-title {
+  font-family: 'Kanit';
   display: flex;
   align-items: flex-start;
 }
 
 .block-text {
+  font-family: 'Kanit';
   display: flex;
   align-items: flex-start;
+}
+
+p {
+  font-family: 'Kanit';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Kanit';
 }
 
 .block-title {
@@ -40,9 +54,25 @@
 /* BASIC */
 
 body {
+  font-family: 'Kanit';
   background: linear-gradient(135deg, #121721 0%, #000000 100%) fixed;
-  /* color: #FFF; */
-  /* font: 300 16px/1.5 "Open Sans", sans-serif; */
+  background-image: url('assets/img/background/bg5.jpg');
+  background-repeat: repeat-y;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-size: cover;
 }
+
+/* body {
+  background-image: url(assets/img/background/bg3.jpg);
+  background-color: rgba(0, 0, 0, 0.507);
+  background-blend-mode: multiply;
+
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
 
 

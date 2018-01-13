@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-how-to-register',
   templateUrl: './how-to-register.component.html',
@@ -14,9 +15,9 @@ export class HowToRegisterComponent implements OnInit {
     right: false
   };
 
-  title_th = "ขั้นตอนการสมัครสมาชิก";
+  title_th = "สมัครสมาชิกเกม 918Kiss";
   title_en = "Download 918kiss";
-  description = "ดาวน์โหลด 918kiss เกมสล็อตออนไลน์บนมือถือ บนระบบ IOS และ Android และดูวิธีการติดตั้งผ่านทางลิงค์ด้านล่าง";
+  description = "สมัคร 918kiss เกมสล็อตออนไลน์บนมือถือ บนระบบ IOS และ Android และโปรโมชันมากมายเมื่อสมัครสมาชิกใหม่";
 
   line = {
     id: " @king918",
@@ -45,6 +46,8 @@ export class HowToRegisterComponent implements OnInit {
       how_to: "ลูกค้าสามารถนำ Username และ Password เข้าเล่นเกมส์ได้ ทันที"
     },
   ];
+
+  
 
   constructor() { }
 
