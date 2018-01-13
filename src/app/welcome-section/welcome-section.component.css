@@ -14,7 +14,7 @@
   background-size:contain;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 110%;
   z-index: 500;
   text-align: center;
   /* height: 60px; */
@@ -30,6 +30,6 @@
   -webkit-background-clip: text;
   font-weight: bold;
   font-size: 1.8em;
-  margin-top: 1rem;
-  margin-left: 110px;
+  /* margin-top: 16px; */
+  margin-left: 80px;
 }
