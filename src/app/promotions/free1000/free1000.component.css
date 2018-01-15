@@ -1,6 +1,16 @@
-
+.box {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10%;
+    flex-direction: column;
+}
 
 .box img {
     height: 400px;
     width:  auto;
 }
+
+.block-title {
+    font-size: 1.3em;
+}
+
