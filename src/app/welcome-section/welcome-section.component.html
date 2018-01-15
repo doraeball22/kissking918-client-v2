@@ -44,7 +44,10 @@
                                           <!-- <div class="date">14 OCT</div>
                                           <h2 class="title">On The Wave</h2> -->
                                           <div>
-                                            <img [src]="'assets/img/promotions/'+image" alt="">
+                                            <a routerLink="/promotions/free1000">
+                                              <img [src]="'assets/img/promotions/'+image" alt="">
+                                            </a>
+                                            
                                           </div>
                                       </div>
                                   </div>
@@ -80,10 +83,20 @@
   </div>
 </div>
 
+
+
 <div class="row">
   <div class="jackpotwrap" >
     <div id="jp_0" class="jackpotamount" ><span style="font-size:0.7em">{{ ticks | currency }}</span></div>
   </div>
 </div>
+
+
+<router-outlet></router-outlet>
+
+
+
+
+
 
 

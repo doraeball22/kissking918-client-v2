@@ -20,6 +20,7 @@ import { ContactComponent } from './contact/contact.component';
 import { InstallationComponent } from './installation/installation.component';
 import { WelcomeSectionComponent } from './welcome-section/welcome-section.component';
 import { AboutComponent } from './about/about.component';
+import { Free1000Component } from './promotions/free1000/free1000.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { AboutComponent } from './about/about.component';
     InstallationComponent,
     WelcomeSectionComponent,
     AboutComponent,
+    Free1000Component,
   ],
   imports: [
     BrowserModule,

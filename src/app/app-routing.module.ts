@@ -8,6 +8,7 @@ import { HowToRegisterComponent } from './how-to-register/how-to-register.compon
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { InstallationComponent } from './installation/installation.component';
+import { Free1000Component } from './promotions/free1000/free1000.component';
  
 const routes: Routes = [
 
@@ -19,7 +20,8 @@ const routes: Routes = [
 
   {
     path: '',
-    component: HomeComponent 
+    component: HomeComponent,
+    pathMatch: 'full'
   },
 
   {
@@ -41,9 +43,13 @@ const routes: Routes = [
     path: 'contact',
     component: ContactComponent
   },
+  {
+    path: 'promotions/free1000',
+    component: Free1000Component,
+  },
 
   // otherwise redirect to home
-  { path: '**', redirectTo: '' }
+  // { path: '**', redirectTo: '' }
 ];
  
 @NgModule({
