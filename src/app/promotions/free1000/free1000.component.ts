@@ -62,7 +62,7 @@ export class Free1000Component implements OnInit {
   FREE1000_LINE = [
     {
       step: 0,
-      how_to: "แอดไลน์ "+this.line.id,
+      how_to: "แอดไลน์ @918kissking",
       image: "0_add"+this.extension
     },
     {
