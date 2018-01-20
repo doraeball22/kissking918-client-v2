@@ -33,3 +33,16 @@
   /* margin-top: 16px; */
   margin-left: 80px;
 }
+
+
+
+.bg-full {
+  background-size: cover;
+  background-image: url('../../assets/img/background/bg4.jpg');
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+}
+
+
+

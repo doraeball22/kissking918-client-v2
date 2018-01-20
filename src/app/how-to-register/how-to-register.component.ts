@@ -20,8 +20,8 @@ export class HowToRegisterComponent implements OnInit {
   description = "สมัคร 918kiss เกมสล็อตออนไลน์บนมือถือ บนระบบ IOS และ Android และโปรโมชันมากมายเมื่อสมัครสมาชิกใหม่";
 
   line = {
-    id: " @king918",
-    link: "https://line.me/R/ti/p/%40king918"
+    id: " @918KING",
+    link: "https://line.me/R/ti/p/%40zkt8553r"
   }
 
   register_in_line = [

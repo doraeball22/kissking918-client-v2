@@ -1,0 +1,17 @@
+.footer-bar{
+    background-image: -webkit-linear-gradient(top, #efd100 0, #e2a233 38%, #f0c328 60%, #fff1a3 86%, #ffe13e 100%);
+    height: 100%;
+}
+
+.inline-list {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    color: #9A0000;
+}
+
+.nav-link:hover {
+    color: rgb(236, 9, 9);
+}

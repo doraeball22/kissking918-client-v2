@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
 
   line = {
-    id: " @king918",
-    link: "https://line.me/R/ti/p/%40king918"
+    id: " @918KING",
+    link: "https://line.me/R/ti/p/%40zkt8553r"
   }
 
   title_th = "ผู้ให้บริการเกมคาสิโนบนมือถือ 918Kiss อย่างเป็นทางการ";

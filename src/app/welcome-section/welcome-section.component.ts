@@ -11,7 +11,7 @@ import { OwlCarousel } from 'ngx-owl-carousel';
 })
 export class WelcomeSectionComponent implements OnInit {
 
-  images = ['promotion-kissing-free1000.jpg'];
+  images = ['cover_free_2500.jpg'];
   ticks = 7777777;
   
 

@@ -29,7 +29,7 @@
 </div> -->
 
 <!-- baner -->
-<div id="home-page-1" class="js-bg-img padding-lg-35t">
+<!-- <div id="home-page-1" class="js-bg-img padding-lg-35t">
   <img src="assets/img/background/bg4.jpg" alt="">
   <div id="home">
       <div class="banner-slider-wrap padding-sm-30b ">
@@ -41,8 +41,6 @@
                               <div class="row">
                                   <div class="col-xs-12 col-md-7 ">
                                       <div class="left-block">
-                                          <!-- <div class="date">14 OCT</div>
-                                          <h2 class="title">On The Wave</h2> -->
                                           <div>
                                             <a routerLink="/promotions/free1000">
                                               <img [src]="'assets/img/promotions/'+image" alt="">
@@ -53,18 +51,11 @@
                                   </div>
                                   <div class="col-xs-12 col-md-5">
                                       <div class="right-block">
-                                          <div class="description">
-                                              <!-- <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\r\rDuis
-                                                  aute irure dolor in reprehenderit in voluptate velit ad minim veniam, quis nostrud exercitation ullamcoesse cillum</p> -->
+                                          <div class="description">                                             
                                                   <h1 class="title animatedBlock " style="color: red;text-shadow: 2px 2px black;">
                                                     เกมคาสิโน ยิงปลา บาคารา แข่งม้า สล็อต สมัครและดาวน์โหลดเกม 918Kiss กับทาง 918KISSKING วันนี้รับโปรโมชันมากมาย
                                                   </h1>
-                                          </div>
-                                          <!-- <div class="hashtags">
-                                              <a target="_blank" href="https://twitter.com/hashtag/ModernDance%20">#ModernDance</a>
-                                              <a target="_blank" href="https://twitter.com/hashtag/inWave%20">#inWave</a>
-                                              <a target="_blank" href="https://twitter.com/hashtag/Miami">#Miami</a>
-                                          </div> -->
+                                          </div>                 
                                           <a routerLink="/promotions/free1000" class="event_btn a-btn anchor-scroll">โปรโมชัน </a>
                                       </div>
                                   </div>
@@ -81,22 +72,69 @@
           </div>
       </div>
   </div>
-</div>
+</div> -->
 
 
 
-<div class="row">
-  <div class="jackpotwrap" >
-    <div id="jp_0" class="jackpotamount" ><span style="font-size:0.7em">{{ ticks | currency }}</span></div>
+
+
+<div id="home-page-1" class="bg-full padding-lg-100t padding-xs-80t">
+  <div class="row">
+    <div class="container">
+      <div class="col-md-7 col-xs-12">
+        <owl-carousel [options]="{items: 1, dots: true, navigation: true, center:true, nav:true,responsiveClass:true,  responsive : {
+          '0' : {
+              items: 1
+          },
+          '768' : {
+              items: 1
+          },
+         '960' : {
+              items: 1
+          },
+          '1200' : {
+              items: 1
+          },
+          '1920' : {
+              items: 1
+          }
+      }}" [items]="images" [carouselClasses]="['owl-theme', 'col', 'sliding']">
+          <div class="item" *ngFor="let image of images;let i = index">
+              <a routerLink="/promotions/free1000">
+                <img [src]="'assets/img/promotions/free1000/'+image" alt="" class="rounded mx-auto d-block">
+              </a>            
+          </div>
+        </owl-carousel>
+        <!-- <owl-carousel [options]="{nav : true, slideBy : 2 ,margin :14 ,responsive: {       '0': {  items: 1, margin: 5 },
+                                '480': { items: 2,  margin: 5 },
+        			'640': { items: 3, margin: 5 }
+                           }  }" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+          <div class="item" *ngFor="let image of images;">
+              <img [src]="'assets/img/promotions/'+image" alt="" class="rounded mx-auto d-block">
+            <div class="thumbnail-image" [ngStyle]="''"></div>
+          </div>
+        </owl-carousel> -->
+      </div>
+      <div class="col-md-5 col-xs-12">
+        <div class="right-block">
+          <div class="description">
+            <h1 class="title animatedBlock " style="font-size: 1.7em; color: #9A0000;text-shadow: 2px 2px black;">
+              เกมคาสิโน ยิงปลา บาคารา แข่งม้า สล็อต สมัครและดาวน์โหลดเกม 918Kiss กับทาง 918KISSKING วันนี้รับโปรโมชั่นมากมาย
+            </h1>
+          </div>
+          <a routerLink="/promotions/free1000" class="event_btn a-btn anchor-scroll">โปรโมชั่น </a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-
 <router-outlet></router-outlet>
 
-
-
-
-
-
-
+<div class="row">
+  <div class="jackpotwrap">
+    <div id="jp_0" class="jackpotamount">
+      <span style="font-size:0.7em">{{ ticks | currency }}</span>
+    </div>
+  </div>
+</div>

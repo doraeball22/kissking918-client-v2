@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class Free1000Component implements OnInit {
 
   line = {
-    id: " @king918",
-    link: "https://line.me/R/ti/p/%40king918"
+    id: " @918KING",
+    link: "https://line.me/R/ti/p/%40zkt8553r"
   }
 
   facebook = {
@@ -20,6 +20,7 @@ export class Free1000Component implements OnInit {
   extension = '.jpg';
   
 
+  hashtag_facebook = ['#king168 #918kissking #scrkingth #slotยิงปลา'];
   FREE1000_FACEBOOK = [
     {
       step: 1,
@@ -43,7 +44,7 @@ export class Free1000Component implements OnInit {
     },
     {
       step: 5,
-      how_to: "พิมพ์แฮชแทค #918kiss #918kissking เว้นวรรคด้วยนะคะ",
+      how_to: `พิมพ์แฮชแทค ${this.hashtag_facebook[0]} เว้นวรรคด้วยนะคะ`,
       image: "step_hashtag"+this.extension
     },
     {
@@ -58,11 +59,12 @@ export class Free1000Component implements OnInit {
     // }
   ]
 
+  hashtag_line = ['@918king'];
 
   FREE1000_LINE = [
     {
       step: 0,
-      how_to: "แอดไลน์ @918kissking",
+      how_to: "แอดไลน์ "+this.line.id,
       image: "0_add"+this.extension
     },
     {
@@ -82,7 +84,7 @@ export class Free1000Component implements OnInit {
     },
     {
       step: 4,
-      how_to: "พิมพ์แฮชแทค @918kissking",
+      how_to: "พิมพ์แฮชแทค "+this.hashtag_line[0],
       image: "4_hashtag"+this.extension
     },
     {
