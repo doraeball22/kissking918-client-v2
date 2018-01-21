@@ -1,0 +1,34 @@
+<div id="promotion" class="padding-lg-130t padding-xs-0t">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="block-header margin-lg-10t margin-lg-25b margin-sm-5t margin-xs-5t ">
+          <h2 class="block-title">{{ title_th }}</h2>
+          <div class="block-text">
+            <p>{{ description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-xl-6 col-lg-6 col-xs-12" *ngFor="let promotion of promotions">
+        <div class="services-wrap animatedBlock">
+          <div class="service-block service-entry">
+            <div class="block-icon">
+              <i class="icofont icofont-money" aria-hidden="true" style="font-size: 1.875em;"></i>
+            </div>
+            <h4 class="service-title">{{promotion.name}}</h4>
+            <div class="service-text">{{promotion.desc}}</div>
+            <div class="promotion-img">
+              <img [src]="'assets/img/promotions/'+promotion.image"  class="rounded mx-auto d-block" alt="">
+            </div>
+            <div style="margin-top: 10px">
+              <a [href]="promotion.link" class="a-btn" >รายละเอียด</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -82,7 +82,7 @@
   <div class="row">
     <div class="container">
       <div class="col-md-7 col-xs-12">
-        <owl-carousel [options]="{items: 1, dots: true, navigation: true, center:true, nav:true,responsiveClass:true,  responsive : {
+        <owl-carousel [options]="{items: 2, dots: true, navigation: true, loop: true, autoplay: true, center:true, nav:true,responsiveClass:true,  responsive : {
           '0' : {
               items: 1
           },
@@ -98,10 +98,10 @@
           '1920' : {
               items: 1
           }
-      }}" [items]="images" [carouselClasses]="['owl-theme', 'col', 'sliding']">
-          <div class="item" *ngFor="let image of images;let i = index">
-              <a routerLink="/promotions/free1000">
-                <img [src]="'assets/img/promotions/free1000/'+image" alt="" class="rounded mx-auto d-block">
+      }}" [items]="promotions" [carouselClasses]="['owl-theme', 'col', 'sliding']">
+          <div class="item" *ngFor="let promotion of promotions;let i = index">
+              <a [routerLink]="promotion.link">
+                <img [src]="'assets/img/promotions/'+promotion.image" alt="" class="rounded mx-auto d-block">
               </a>            
           </div>
         </owl-carousel>
@@ -122,7 +122,7 @@
               เกมคาสิโน ยิงปลา บาคารา แข่งม้า สล็อต สมัครและดาวน์โหลดเกม 918Kiss กับทาง 918KISSKING วันนี้รับโปรโมชั่นมากมาย
             </h1>
           </div>
-          <a routerLink="/promotions/free1000" class="event_btn a-btn anchor-scroll">โปรโมชั่น </a>
+          <!-- <a routerLink="/promotions/free1000" class="event_btn a-btn anchor-scroll">โปรโมชั่น </a> -->
         </div>
       </div>
     </div>

@@ -21,6 +21,8 @@ import { InstallationComponent } from './installation/installation.component';
 import { WelcomeSectionComponent } from './welcome-section/welcome-section.component';
 import { AboutComponent } from './about/about.component';
 import { Free1000Component } from './promotions/free1000/free1000.component';
+import { Free50Component } from './promotions/free50/free50.component';
+import { PromotionListComponent } from './promotions/promotion-list/promotion-list.component';
 
 
 @NgModule({
@@ -37,6 +39,8 @@ import { Free1000Component } from './promotions/free1000/free1000.component';
     WelcomeSectionComponent,
     AboutComponent,
     Free1000Component,
+    Free50Component,
+    PromotionListComponent,
   ],
   imports: [
     BrowserModule,

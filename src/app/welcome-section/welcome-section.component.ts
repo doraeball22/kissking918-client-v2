@@ -11,7 +11,21 @@ import { OwlCarousel } from 'ngx-owl-carousel';
 })
 export class WelcomeSectionComponent implements OnInit {
 
-  images = ['cover_free_2500.jpg'];
+  // images = ['promotion_free_2500.jpg'];
+
+  promotions = [
+    {
+      name: "กิจกรรมแจกฟรี 2500",
+      image: "promotion_free_2500.jpg",
+      link: "promotions/free1000"
+    },
+    {
+      name: "กิจกรรมแจกฟรี 50",
+      image: "promotion_free_50.jpg",
+      link: "promotions/free50"
+    }
+  ]
+
   ticks = 7777777;
   
 

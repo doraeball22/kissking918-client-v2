@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { InstallationComponent } from './installation/installation.component';
 import { Free1000Component } from './promotions/free1000/free1000.component';
+import { Free50Component } from './promotions/free50/free50.component';
  
 const routes: Routes = [
 
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path: 'promotions/free1000',
     component: Free1000Component,
+  },
+  {
+    path: 'promotions/free50',
+    component: Free50Component,
   },
 
   // otherwise redirect to home
