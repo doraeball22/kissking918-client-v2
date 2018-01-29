@@ -4,7 +4,7 @@
     <div class="container box">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-md-12">
             <div class="block-header ">
               <h1 class="wow bounceInCenter">กิจกรรมแจกฟรี
                 <span style="color:goldenrod">฿50</span>
@@ -13,7 +13,7 @@
                 <p>สมัคร918Kiss ดาวน์โหลดเกม918Kiss เกมคาสิโนออนไลน์บนมือถือ รับโปรโมชั่นดีที่สุดมากมาย </p>
               </div>
               <div class="box-img-cover" style="display: flex; justify-content: center;">
-                <img src="assets/img/promotions/promotion_free_50.jpg" class="rounded mx-auto d-block" alt="Scrkingth แจก 1000" style="max-width: 400px; height: auto;max-height: 400px"
+                <img src="assets/img/promotions/promotion_free_50.jpg" class="rounded mx-auto d-block" alt="Scrkingth แจก 1000" style="width: 400px; height: auto;max-height: 400px"
                 />
               </div>
 
@@ -28,8 +28,8 @@
                     #slotยิงปลา
                     <br>***แชร์แบบสาธารณะแล้วแคปมายืนยันกับทางเรานะคะ และเพื่อนต้องไม่ต่ำกว่า 400 คน***
                   </li>
-                  <li>แคปภาพหน้าจอโพสต์ที่แชร์ แล้วส่งมาที่
-                    <a [href]="line.link" target="_bank">{{ line.id }}</a>
+                  <li>แคปภาพหน้าจอโพสต์ที่แชร์ แล้วส่งมาที่ห้องที่ลูกค้าอยู่
+                    
                   </li>
                 </ol>
               </div>
@@ -158,6 +158,32 @@
       </div>
     </div>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="block-header margin-lg-10t margin-lg-25b margin-sm-5t margin-xs-5t ">
+            <h1 style="color:#00B900">LINE กด LIKE & SHARE พร้อมแฮชแทค @918KING</h1>
+            <div class="block-text">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="how-to-detail">
+          <div class="col-12" *ngFor="let free1000_line of FREE1000_LINE">
+            <div class="box">
+              <p class="block-title">{{free1000_line.step}}. {{ free1000_line.how_to }}</p>
+              <img src="assets/img/promotions/free50/line/{{ free1000_line.image }}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+ 
+
 
     <div class="container">
       <div class="row">
@@ -165,19 +191,16 @@
           <div class="col-xs-12">
             <div class="box">
               <div class="col-12">
-                <p class="block-title">ส่งภาพที่แคปมาที่ห้องไลน์ {{ line.id }} กดปุ่มข้างล่างได้เลยค่ะ</p>
-                <p>1.ส่งภาพหน้าจอที่แชร์ใน facebook</p>
-                <br>
-                <div class="line-it-button" style="display: none;" data-lang="en" data-type="friend" data-lineid="@918KING" data-count="true"
-                  data-home="true"></div>
-                <br>
-                <a [href]="line.link" target="_bank" style="color:#00B833">
-                  <i class="icofont icofont-brand-line-messenger" style="font-size:2.7em">{{ line.id}}</i>
-                </a>
+                <p class="block-title">ส่งภาพที่แคปมาที่ห้องไลน์ ที่ลูกค้าอยู่ได้เลยค่ะ (ห้องใดห้องหนึ่ง)</p>
+                <p>1.ส่งภาพที่แชร์ใน facebook
+                  <br>2.ส่งภาพที่แชร์ใน LINE
+                  <br>**ต้องส่งทั้ง 2 ภาพนะคะ**
+                </p>
+                <br>               
 
-                <!-- <div *ngFor="let free50_finish of free50_FINISH">
-                            <img src="assets/img/promotions/free50/line/{{ free50_finish.image }}" alt="">
-                        </div>                     -->
+                <div *ngFor="let free1000_finish of FREE1000_FINISH">
+                            <img src="assets/img/promotions/free1000/line/{{ free1000_finish.image }}" alt="">
+                        </div>                    
               </div>
             </div>
           </div>

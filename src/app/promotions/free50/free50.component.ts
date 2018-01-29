@@ -64,8 +64,8 @@ export class Free50Component implements OnInit {
   FREE1000_LINE = [
     {
       step: 0,
-      how_to: "แอดไลน์ "+this.line.id,
-      image: "0_add"+this.extension
+      how_to: "เข้าไปที่ห้องไลน์ที่ลูกค้าอยูู่ @scrking, @scrkingplus, @vipking",
+      image: ""
     },
     {
       step: 1,
@@ -97,6 +97,18 @@ export class Free50Component implements OnInit {
     //   how_to: "ส่งภาพที่แคปมาที่ห้องไลน์ที่ลูกค้าอยู่ได้เลยคะ (ห้องใดห้องหนึ่ง)",
     //   image: ""
     // }
+  ]
+
+  FREE1000_FINISH = [
+    {
+      image: "line_@vipking"+this.extension
+    },
+    {
+      image: "line_@scrkingplus"+this.extension
+    },
+    {
+      image: "line_@scrking"+this.extension
+    },
   ]
 
   constructor() { }
